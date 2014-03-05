@@ -2,6 +2,7 @@ package funball.core.Screen;
 
 import playn.core.Image;
 import playn.core.ImageLayer;
+import playn.core.Pointer;
 import react.UnitSlot;
 import tripleplay.game.ScreenStack;
 import tripleplay.game.UIScreen;
@@ -21,7 +22,7 @@ public class HomeScreen extends UIScreen {
     public static final Font TITLE_FONT = graphics().createFont("Helvetica",Font.Style.PLAIN,24);
     private final ScreenStack ss;
     private Root root;
-
+    private Image start,quit,background;
     public HomeScreen(ScreenStack ss) {
         this.ss = ss;
     }
@@ -30,22 +31,27 @@ public class HomeScreen extends UIScreen {
     public void wasShown() {
         super.wasShown();
 
-        Image bgImage = assets().getImage("images/bg.png");
-        /*ImageLayer bgLayer = graphics().createImageLayer(bgImage);
-        layer.add(bgLayer);*/
+        background = assets().getImage("images/bg.png");
+        ImageLayer backgroundLayer = graphics().createImageLayer(background);
+        layer.add(backgroundLayer);
+        backgroundLayer.setTranslation(0f,0f);
 
-        root = iface.createRoot(
-                AxisLayout.vertical().gap(15),
-                SimpleStyles.newSheet(), layer);
-        root.addStyles(Style.BACKGROUND.is(Background.image(bgImage)));
-        root.setSize(width(), height());
-        root.add(new Label("Fun Ball").addStyles(Style.FONT.is(HomeScreen.TITLE_FONT)));
+        start = assets().getImage("images/start.png");
+        ImageLayer startLayer = graphics().createImageLayer(start);
+        layer.add(startLayer);
+        startLayer.setTranslation(100f,150f);
 
-        root.add(new Button("Start Game").onClick(new UnitSlot() {
+        quit = assets().getImage("images/quit.png");
+        ImageLayer quitLayer = graphics().createImageLayer(quit);
+        layer.add(quitLayer);
+        quitLayer.setTranslation(100f,220f);
+
+        startLayer.addListener(new Pointer.Adapter(){
             @Override
-            public void onEmit() {
+            public void onPointerEnd(Pointer.Event event) {
                 ss.push(new GameScreen(ss));
             }
-        }));
+        });
+
     }
 }

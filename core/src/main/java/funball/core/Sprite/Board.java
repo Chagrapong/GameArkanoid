@@ -66,11 +66,11 @@ public class Board extends UIScreen {
                 sprite.layer().height()* GameScreen.M_PER_PIXEL /2);
         FixtureDef fixtureDef = new FixtureDef();
         fixtureDef.shape = shape;
-        fixtureDef.density = 0.4f;
-        fixtureDef.friction = 0.1f;
+        //fixtureDef.density = 0.4f;
+        //fixtureDef.friction = 0.1f;
 
         body.createFixture(fixtureDef);
-        body.setLinearDamping(0.2f);
+        //body.setLinearDamping(0.2f);
         body.setTransform(new Vec2(x,y), 0f);
         return body;
     }

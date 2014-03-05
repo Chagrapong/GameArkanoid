@@ -29,10 +29,8 @@ public class GameScreen extends UIScreen{
     private static int width = 24;//640px in physic unit (meter)
     private static int height = 18;//480px in physic unit (meter)
     private Board board;
-    private final float x = 9f;
-    private final float xx = 13f;//new Vec2(9f, 15f);
-   /* private final float xx = 9f;
-    private final float yy = 15f;*/
+    private Body ground,up,left,right;
+
     public GameScreen(ScreenStack ss) {
         this.ss = ss;
     }
@@ -45,6 +43,11 @@ public class GameScreen extends UIScreen{
         ImageLayer backLayer = graphics().createImageLayer(back);
         layer.add(backLayer);
         backLayer.setTranslation(0f,0f);
+
+        Image rg = assets().getImage("images/right.png");
+        ImageLayer rgLayer = graphics().createImageLayer(rg);
+        layer.add(rgLayer);
+        rgLayer.setTranslation(635f,0f);
 
         backLayer.addListener(new Pointer.Adapter(){
             @Override
@@ -74,35 +77,39 @@ public class GameScreen extends UIScreen{
             world.setDebugDraw(debugDraw);
         }
 
-        Body ground = world.createBody(new BodyDef());
+        ground = world.createBody(new BodyDef());
         PolygonShape groundShape = new PolygonShape();
         groundShape.setAsEdge(new Vec2(0f, 18f),new Vec2(24f, 18f));
         ground.createFixture(groundShape, 0.0f);
 
-        Body up = world.createBody(new BodyDef());
+        up = world.createBody(new BodyDef());
         PolygonShape upShape = new PolygonShape();
         upShape.setAsEdge(new Vec2(0f, 1f),new Vec2(24f, 1f));
         up.createFixture(upShape, 0.0f);
 
-        Body left = world.createBody(new BodyDef());
+        left = world.createBody(new BodyDef());
         PolygonShape leftShape = new PolygonShape();
         leftShape.setAsEdge(new Vec2(0f, 0f),new Vec2(0f, 18f));
         left.createFixture(leftShape, 0.0f);
 
-        Body right = world.createBody(new BodyDef());
+        right = world.createBody(new BodyDef());
         PolygonShape rightShape = new PolygonShape();
         rightShape.setAsEdge(new Vec2(24f, 0f),new Vec2(24f, 18f));
         right.createFixture(rightShape, 0.0f);
 
-
-
         board = new Board(world,320f,445f);
         layer.add(board.layer());
+
 
         world.setContactListener(new ContactListener() {
             @Override
             public void beginContact(Contact contact) {
-
+                if (contact.getFixtureA().getBody() == ground) {
+                    System.out.println("A");
+                }
+                else if (contact.getFixtureB().getBody() == ground){
+                    System.out.println("A");
+                }
             }
 
             @Override
