@@ -64,13 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameScreen.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GameScreen.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="13" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="2363">
-              <folding>
-                <element signature="e#1671#1843#0" expanded="true" />
-              </folding>
+            <state line="95" column="62" selection-start="3438" selection-end="3438" vertical-scroll-proportion="0.6458616" vertical-offset="799" max-vertical-offset="2431">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,23 +76,17 @@
       <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="33" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="657" max-vertical-offset="1751">
-              <folding>
-                <element signature="e#2419#2849#0" expanded="true" />
-                <element signature="e#2838#2839#0" expanded="true" />
-              </folding>
+            <state line="80" column="0" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="2669">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeScreen.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/HomeScreen.java">
+      <file leaf-file-name="Board.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/Board.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="42" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.5305292" vertical-offset="0" max-vertical-offset="850">
-              <folding>
-                <element signature="e#1502#1675#0" expanded="true" />
-                <element signature="e#1664#1665#0" expanded="true" />
-              </folding>
+            <state line="8" column="1" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,9 +109,10 @@
         <option value="$PROJECT_DIR$/core/src/main/java/funball/core/Debug/DebugDrawBox2D.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/funball/core/FunBall.java" />
         <option value="$PROJECT_DIR$/assets/src/main/resources/assets/images/board.json" />
-        <option value="$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/funball/core/Screen/HomeScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java" />
+        <option value="$PROJECT_DIR$/assets/src/main/resources/assets/images/Board.json" />
+        <option value="$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java" />
       </list>
     </option>
   </component>
@@ -190,6 +183,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -392,7 +386,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -411,6 +404,9 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -603,6 +599,26 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
@@ -617,14 +633,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12193823" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12193823" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13951011" sideWeight="0.5006553" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.061235357" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.02715655" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12193823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13951011" sideWeight="0.4993447" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17780173" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -632,6 +648,9 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.json" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -654,22 +673,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/Board.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="32" selection-start="34" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="69" selection-start="2599" selection-end="2599" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2584">
-          <folding>
-            <element signature="e#1671#1843#0" expanded="true" />
-          </folding>
+        <state line="72" column="51" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2737">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="34" selection-start="2375" selection-end="2375" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="1751">
-          <folding>
-            <element signature="e#2419#2849#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-          </folding>
+        <state line="80" column="0" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="2720">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -680,51 +701,148 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/Board.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="32" selection-start="34" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="52" selection-start="3739" selection-end="3739" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2737">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="11" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/Board.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="5" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="52" selection-start="3739" selection-end="3739" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="11" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="1904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/Board.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="13" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="33" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/HomeScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="42" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="13" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="33" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/HomeScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="42" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="69" selection-start="2599" selection-end="2599" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="34" selection-start="2375" selection-end="2375" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="1751">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/playn/playn-core/1.8/playn-core-1.8-sources.jar!/playn/core/PlayN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="19" selection-start="4530" selection-end="4530" vertical-scroll-proportion="0.0" vertical-offset="2924" max-vertical-offset="3774" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="0" selection-start="3904" selection-end="3904" vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="2244">
-          <folding>
-            <element signature="e#1671#1843#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="13" selection-start="2867" selection-end="2867" vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="1904">
-          <folding>
-            <element signature="e#2419#2849#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="50" selection-start="2720" selection-end="2720" vertical-scroll-proportion="0.0" vertical-offset="1309" max-vertical-offset="2040">
-          <folding>
-            <element signature="e#1671#1843#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="64" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="1683">
-          <folding>
-            <element signature="e#2419#2849#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="442">
-          <folding>
-            <element signature="e#2419#2849#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -758,9 +876,7 @@
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="40" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="816">
-          <folding>
-            <element signature="e#1671#1843#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -772,9 +888,7 @@
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="816">
-          <folding>
-            <element signature="e#1671#1843#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -786,9 +900,7 @@
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="340">
-          <folding>
-            <element signature="e#1671#1843#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -819,71 +931,163 @@
         <state line="107" column="61" selection-start="3669" selection-end="3669" vertical-scroll-proportion="-0.44444445" vertical-offset="1819" max-vertical-offset="3077" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Sprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="0" selection-start="3328" selection-end="3328" vertical-scroll-proportion="0.33289817" vertical-offset="1258" max-vertical-offset="3179">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/FunBall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="11" selection-start="596" selection-end="596" vertical-scroll-proportion="0.53263706" vertical-offset="0" max-vertical-offset="766" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/funball/java/FunBallJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.21628499" vertical-offset="0" max-vertical-offset="786" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/playn/playn-core/1.8/playn-core-1.8-sources.jar!/playn/core/Platform.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="14" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.629932" vertical-offset="285" max-vertical-offset="1020" />
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/playn/playn-core/1.8/playn-core-1.8-sources.jar!/playn/core/Mouse.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/HomeScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="44" selection-start="1190" selection-end="1190" vertical-scroll-proportion="-1.9600887" vertical-offset="2040" max-vertical-offset="5831">
+        <state line="36" column="42" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.5305292" vertical-offset="0" max-vertical-offset="765">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="0" selection-start="3328" selection-end="3328" vertical-scroll-proportion="0.34702548" vertical-offset="1268" max-vertical-offset="3179">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/funball/java/FunBallJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="0.23129252" vertical-offset="0" max-vertical-offset="735" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/FunBall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="556" selection-end="556" vertical-scroll-proportion="0.4857143" vertical-offset="0" max-vertical-offset="735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbox2d/jbox2d-library/2.1.2.3/jbox2d-library-2.1.2.3.jar!/org/jbox2d/dynamics/Body.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="111" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.34508076" vertical-offset="530" max-vertical-offset="2890" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/playn/playn-core/1.8/playn-core-1.8-sources.jar!/playn/core/Mouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="17" selection-start="761" selection-end="761" vertical-scroll-proportion="-0.40934843" vertical-offset="408" max-vertical-offset="5831" />
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/playn/playn-core/1.8/playn-core-1.8-sources.jar!/playn/core/PlayN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="18" selection-start="4529" selection-end="4529" vertical-scroll-proportion="0.09534368" vertical-offset="2600" max-vertical-offset="3502">
+        <state line="172" column="19" selection-start="4530" selection-end="4530" vertical-scroll-proportion="0.09534368" vertical-offset="2600" max-vertical-offset="3502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/src/main/resources/assets/images/Board.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="1" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Sprite/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="33" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.0" vertical-offset="657" max-vertical-offset="1751">
-          <folding>
-            <element signature="e#2419#2849#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-          </folding>
+        <state line="80" column="0" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2669">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="13" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="2363">
-          <folding>
-            <element signature="e#1671#1843#0" expanded="true" />
-          </folding>
+        <state line="95" column="62" selection-start="3438" selection-end="3438" vertical-scroll-proportion="0.6458616" vertical-offset="799" max-vertical-offset="2431">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/funball/core/Screen/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="42" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.5305292" vertical-offset="0" max-vertical-offset="850">
-          <folding>
-            <element signature="e#1502#1675#0" expanded="true" />
-            <element signature="e#1664#1665#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>funball</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.allen-sauer.gwt.voices:gwt-voices:3.2.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$" />

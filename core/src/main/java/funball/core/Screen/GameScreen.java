@@ -30,6 +30,8 @@ public class GameScreen extends UIScreen{
     private static int height = 18;//480px in physic unit (meter)
     private Board board;
     private Body ground,up,left,right;
+    private Image bgGame,back,windown;
+    private ImageLayer bgGameLayer,backLayer,windownLayer;
 
     public GameScreen(ScreenStack ss) {
         this.ss = ss;
@@ -39,15 +41,22 @@ public class GameScreen extends UIScreen{
     public void wasShown() {
         super.wasShown();
 
-        Image back = assets().getImage("images/back.png");
-        ImageLayer backLayer = graphics().createImageLayer(back);
+        bgGame = assets().getImage("images/backgroundGame.png");
+        bgGameLayer = graphics().createImageLayer(bgGame);
+        layer.add(bgGameLayer);
+        bgGameLayer.setTranslation(0f,0f);
+
+        windown = assets().getImage("images/Blocksbackgrounds.png");
+        windownLayer = graphics().createImageLayer(windown);
+        layer.add(windownLayer);
+        windownLayer.setTranslation(0f,0f);
+
+        back = assets().getImage("images/back.png");
+        backLayer = graphics().createImageLayer(back);
         layer.add(backLayer);
         backLayer.setTranslation(0f,0f);
 
-        Image rg = assets().getImage("images/right.png");
-        ImageLayer rgLayer = graphics().createImageLayer(rg);
-        layer.add(rgLayer);
-        rgLayer.setTranslation(635f,0f);
+
 
         backLayer.addListener(new Pointer.Adapter(){
             @Override
@@ -79,25 +88,25 @@ public class GameScreen extends UIScreen{
 
         ground = world.createBody(new BodyDef());
         PolygonShape groundShape = new PolygonShape();
-        groundShape.setAsEdge(new Vec2(0f, 18f),new Vec2(24f, 18f));
+        groundShape.setAsEdge(new Vec2(0f, 17.5f),new Vec2(24f, 17.5f));
         ground.createFixture(groundShape, 0.0f);
 
         up = world.createBody(new BodyDef());
         PolygonShape upShape = new PolygonShape();
-        upShape.setAsEdge(new Vec2(0f, 1f),new Vec2(24f, 1f));
+        upShape.setAsEdge(new Vec2(0f, 0.5f),new Vec2(24f, 0.5f));
         up.createFixture(upShape, 0.0f);
 
         left = world.createBody(new BodyDef());
         PolygonShape leftShape = new PolygonShape();
-        leftShape.setAsEdge(new Vec2(0f, 0f),new Vec2(0f, 18f));
+        leftShape.setAsEdge(new Vec2(0.77f, 0f),new Vec2(0.77f, 18f));
         left.createFixture(leftShape, 0.0f);
 
         right = world.createBody(new BodyDef());
         PolygonShape rightShape = new PolygonShape();
-        rightShape.setAsEdge(new Vec2(24f, 0f),new Vec2(24f, 18f));
+        rightShape.setAsEdge(new Vec2(23.23f, 0f),new Vec2(23.23f, 18f));
         right.createFixture(rightShape, 0.0f);
 
-        board = new Board(world,320f,445f);
+        board = new Board(world,320f,454f);
         layer.add(board.layer());
 
 
