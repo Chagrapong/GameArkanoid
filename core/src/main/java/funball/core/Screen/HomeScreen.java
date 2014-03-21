@@ -31,20 +31,20 @@ public class HomeScreen extends UIScreen {
     public void wasShown() {
         super.wasShown();
 
-        background = assets().getImage("images/bg.png");
+        background = assets().getImage("images/HomeScreen/bg.png");
         ImageLayer backgroundLayer = graphics().createImageLayer(background);
         layer.add(backgroundLayer);
         backgroundLayer.setTranslation(0f,0f);
 
-        start = assets().getImage("images/start.png");
+        start = assets().getImage("images/HomeScreen/start.png");
         ImageLayer startLayer = graphics().createImageLayer(start);
         layer.add(startLayer);
         startLayer.setTranslation(100f,150f);
-
-        quit = assets().getImage("images/quit.png");
-        ImageLayer quitLayer = graphics().createImageLayer(quit);
-        layer.add(quitLayer);
-        quitLayer.setTranslation(100f,220f);
+//
+//        quit = assets().getImage("images/quit.png");
+//        ImageLayer quitLayer = graphics().createImageLayer(quit);
+//        layer.add(quitLayer);
+//        quitLayer.setTranslation(100f,220f);
 
         startLayer.addListener(new Pointer.Adapter(){
             @Override

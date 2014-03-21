@@ -17,8 +17,8 @@ public class Board extends UIScreen {
     private int spriteIndex = 0;
     private boolean hasLoaded = false;
 
-   public enum State{
-        IDLE,RUNR,RUNL
+    public enum State{
+        IDLE,RUNR,RUNL,DIE
     };
 
     private State state = State.IDLE;
@@ -28,7 +28,7 @@ public class Board extends UIScreen {
 
 
     public Board(final World world,final float x,final  float y){
-        this.sprite = SpriteLoader.getSprite("images/Board.json");
+        this.sprite = SpriteLoader.getSprite("images/Board/Board.json");
 
         sprite.addCallback(new Callback<Sprite>() {
             @Override
@@ -53,7 +53,7 @@ public class Board extends UIScreen {
         sprite.layer().addListener(new Pointer.Adapter(){
             @Override
             public void onPointerEnd(Pointer.Event event) {
-                state = State.IDLE;
+                state = State.DIE;
                 spriteIndex = -1;
                 e = 0;
             }
@@ -95,9 +95,6 @@ public class Board extends UIScreen {
                 }
             }
         });
-
-
-
     }
 
     private Body initPhysicsBody(World world, float x, float y){
@@ -108,15 +105,15 @@ public class Board extends UIScreen {
         body.setFixedRotation(true);
 
         PolygonShape shape = new PolygonShape();
-        shape.setAsBox(56 * GameScreen.M_PER_PIXEL ,
+        shape.setAsBox(50 * GameScreen.M_PER_PIXEL ,
                 sprite.layer().height()* GameScreen.M_PER_PIXEL/2 );
         FixtureDef fixtureDef = new FixtureDef();
         fixtureDef.shape = shape;
-        fixtureDef.density = 0.5f;
-        fixtureDef.friction = 80f;
+        fixtureDef.density = 0.7f;
+        fixtureDef.friction = 500f;
 
         body.createFixture(fixtureDef);
-        //body.setLinearDamping(0.2f);
+//        body.setLinearDamping(0f);
         body.setTransform(new Vec2(x,y), 0f);
         return body;
     }
@@ -133,19 +130,18 @@ public class Board extends UIScreen {
             switch (state) {
                 case IDLE:offset = 0;
                     break;
-                case RUNR:offset = 0;
-                    break;
-                case RUNL:offset = 0;
+                case DIE:offset = 5;
                     break;
             }
             spriteIndex = offset + ((spriteIndex +1)%4);
             sprite.setSprite(spriteIndex);
             e = 0;
+
             if (state == State.RUNL){
-                body.applyForce(new Vec2(-800f,0f),body.getPosition());
+                body.applyForce(new Vec2(-700f,0f),body.getPosition());
             }
             if (state == State.RUNR){
-                body.applyForce(new Vec2(800f,0f),body.getPosition());
+                body.applyForce(new Vec2(700f,0f),body.getPosition());
             }
         }
     }

@@ -1,9 +1,12 @@
 package funball.core.Screen;
 
+import funball.core.Sprite.Ball;
+import funball.core.Sprite.Block;
 import funball.core.Sprite.Board;
 import org.jbox2d.callbacks.ContactImpulse;
 import org.jbox2d.callbacks.ContactListener;
 import org.jbox2d.collision.Manifold;
+import org.jbox2d.collision.shapes.CircleShape;
 import org.jbox2d.dynamics.contacts.Contact;
 import playn.core.*;
 import playn.core.util.Clock;
@@ -17,6 +20,9 @@ import org.jbox2d.common.Vec2;
 import org.jbox2d.dynamics.*;
 import funball.core.Debug.DebugDrawBox2D;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Chagrapong on 26/2/2557.
  */
@@ -29,9 +35,15 @@ public class GameScreen extends UIScreen{
     private static int width = 24;//640px in physic unit (meter)
     private static int height = 18;//480px in physic unit (meter)
     private Board board;
+    private Ball ball;
+    private Block block;
+    private List<Block> bb = new ArrayList<Block>(10);
+    private float sum = 40f;
+
     private Body ground,up,left,right;
-    private Image bgGame,back,windown;
-    private ImageLayer bgGameLayer,backLayer,windownLayer;
+    private Image bgGame,back,windown,boll;
+    private ImageLayer bgGameLayer,backLayer,windownLayer,bollLayer;
+    private float x_1 = 320f,y_1 = 428f;
 
     public GameScreen(ScreenStack ss) {
         this.ss = ss;
@@ -41,22 +53,20 @@ public class GameScreen extends UIScreen{
     public void wasShown() {
         super.wasShown();
 
-        bgGame = assets().getImage("images/backgroundGame.png");
+        bgGame = assets().getImage("images/GameScreen/Backgrounds.png");
         bgGameLayer = graphics().createImageLayer(bgGame);
         layer.add(bgGameLayer);
         bgGameLayer.setTranslation(0f,0f);
 
-        windown = assets().getImage("images/Blocksbackgrounds.png");
+        windown = assets().getImage("images/GameScreen/Blocksbackgrounds.png");
         windownLayer = graphics().createImageLayer(windown);
         layer.add(windownLayer);
         windownLayer.setTranslation(0f,0f);
 
-        back = assets().getImage("images/back.png");
+        back = assets().getImage("images/GameScreen/back.png");
         backLayer = graphics().createImageLayer(back);
         layer.add(backLayer);
         backLayer.setTranslation(0f,0f);
-
-
 
         backLayer.addListener(new Pointer.Adapter(){
             @Override
@@ -65,7 +75,7 @@ public class GameScreen extends UIScreen{
             }
         });
 
-        Vec2 gravity = new Vec2(0.0f, 10.0f);
+        Vec2 gravity = new Vec2(0.0f, 0f);
         world = new World(gravity, true);
         world.setWarmStarting(true);
         world.setAutoClearForces(true);
@@ -109,12 +119,19 @@ public class GameScreen extends UIScreen{
         board = new Board(world,320f,454f);
         layer.add(board.layer());
 
+        ball = new Ball(world,x_1,y_1);
+        layer.add(ball.layer());
+
+        block = new Block(world,200f,200f);
+        bb.add(block);
+        layer.add(block.layer());
+
 
         world.setContactListener(new ContactListener() {
             @Override
             public void beginContact(Contact contact) {
                 if (contact.getFixtureA().getBody() == ground) {
-                    System.out.println("A");
+                    System.out.println("ลูกบอล");
                 }
                 else if (contact.getFixtureB().getBody() == ground){
                     System.out.println("A");
@@ -142,6 +159,8 @@ public class GameScreen extends UIScreen{
     public void update(int delta) {
         super.update(delta);
         board.update(delta);
+        ball.update(delta);
+        block.update(delta);
         world.step(0.033f, 10, 10);
     }
 
@@ -149,6 +168,8 @@ public class GameScreen extends UIScreen{
     public void paint(Clock clock) {
         super.paint(clock);
         board.paint(clock);
+        ball.paint(clock);
+        block.paint(clock);
         if (showDebugDraw){
             debugDraw.getCanvas().clear();
             world.drawDebugData();
