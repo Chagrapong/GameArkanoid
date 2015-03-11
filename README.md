@@ -1,3 +1,3 @@
 # GameArkanoid
 compile and run;
-  mvn -Pjava
+  mvn -Pjava or mvn test -Pjava
